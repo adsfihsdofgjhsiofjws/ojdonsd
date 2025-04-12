@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NapNimbus — Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f6f6f6;
+      font-family: 'Helvetica Neue', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #1a1a1a;
+    }
+
+    .silhouette {
+      width: 160px;
+      height: 160px;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Pomeranian_white_silhouette.svg/2048px-Pomeranian_white_silhouette.svg.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: brightness(0) invert(0.1);
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input[type="email"] {
+      border: none;
+      border-bottom: 1px solid #ccc;
+      background: transparent;
+      padding: 0.5rem;
+      font-size: 1rem;
+      width: 250px;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    input[type="submit"] {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #333;
+    }
+
+    .tease {
+      font-size: 0.85rem;
+      margin-top: 1rem;
+      font-style: italic;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="silhouette"></div>
+  <h1>Something dreamy is coming.<br>Be first in line for perks only a dog could dream of.</h1>
+  <form>
+    <input type="email" placeholder="your@email.com" required>
+    <input type="submit" value="Join Waitlist">
+  </form>
+  <p class="tease">Priority access to nap pods, REMbo merch, and DreamDog™ pairing.</p>
+</body>
+</html>
