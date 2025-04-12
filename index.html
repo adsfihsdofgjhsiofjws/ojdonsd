@@ -3,87 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NapNimbus — Coming Soon</title>
+  <title>NapNimbus — Soft Chaos, Deep Sleep</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f6f6f6;
-      font-family: 'Helvetica Neue', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f8f8;
+      color: #1a1a1a;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
-      color: #1a1a1a;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 3rem 1rem;
     }
 
-    .silhouette {
-      width: 160px;
-      height: 160px;
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Pomeranian_white_silhouette.svg/2048px-Pomeranian_white_silhouette.svg.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      filter: brightness(0) invert(0.1);
-      margin-bottom: 2rem;
-    }
-
-    h1 {
-      font-size: 1.5rem;
-      font-weight: 300;
+    header {
       text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header img {
+      width: 120px;
       margin-bottom: 1rem;
     }
 
-    form {
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    p.tagline {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1a1a1a;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 720px;
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      margin-bottom: 2rem;
+    }
+
+    .signup {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
     input[type="email"] {
-      border: none;
-      border-bottom: 1px solid #ccc;
-      background: transparent;
-      padding: 0.5rem;
-      font-size: 1rem;
-      width: 250px;
+      padding: 0.7rem;
+      width: 260px;
       margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 30px;
       text-align: center;
     }
 
     input[type="submit"] {
       background-color: #1a1a1a;
       color: white;
-      padding: 0.6rem 1.2rem;
       border: none;
-      border-radius: 50px;
-      font-size: 0.9rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 30px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #333;
+      font-size: 0.9rem;
     }
 
     .tease {
-      font-size: 0.85rem;
+      font-size: 0.9rem;
+      color: #777;
       margin-top: 1rem;
       font-style: italic;
-      color: #666;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.8rem;
+      color: #aaa;
       text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="silhouette"></div>
-  <h1>Something dreamy is coming.<br>Be first in line for perks only a dog could dream of.</h1>
-  <form>
-    <input type="email" placeholder="your@email.com" required>
-    <input type="submit" value="Join Waitlist">
-  </form>
-  <p class="tease">Priority access to nap pods, REMbo merch, and DreamDog™ pairing.</p>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Pomeranian_white_silhouette.svg/2048px-Pomeranian_white_silhouette.svg.png" alt="DreamDog™ Silhouette">
+    <h1>NapNimbus</h1>
+    <p class="tagline">Where your dreams get white-glove service 💤</p>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#signup">Waitlist</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="features">
+      <h2>✨ Features</h2>
+      <p>We blend on-demand luxury with the softness of serenity:</p>
+      <ul style="list-style: none; padding-left: 0; margin-top: 1rem;">
+        <li>🌫️ Self-driving nap pods with temp control and mood lighting</li>
+        <li>🎧 Dream soundscapes from Paris rain to existential ASMR</li>
+        <li>📓 ThoughtCloud™ journaling, turned into poetic affirmations</li>
+        <li>🐶 DreamDog™: Every napper paired with an emotional support pom</li>
+      </ul>
+    </section>
+
+    <section id="gallery">
+      <h2>📸 Gallery</h2>
+      <p>Vibe with our surreal napcore aesthetic:</p>
+      <img class="hero-image" src="https://images.unsplash.com/photo-1558980394-0f26183ceefe" alt="Floating Nap Pod">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1590080876772-981219574b2e" alt="Dreamy Pomeranian in Sunglasses">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1550975274-6bda427f0639" alt="Ethereal Skyline Nap Moment">
+    </section>
+
+    <section id="signup">
+      <h2>🌙 Join the Waitlist</h2>
+      <div class="signup">
+        <form>
+          <input type="email" placeholder="your@email.com" required>
+          <input type="submit" value="Join Now">
+        </form>
+        <p class="tease">First 100 signups get early DreamDog™ access and limited edition REMbo merch</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 NapNimbus. All dreams reserved.
+  </footer>
 </body>
 </html>
